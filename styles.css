@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+main{
+    display: flex;
+}
+section{
+    display: flex;
+    flex-direction: column;
+
+    background: linear-gradient(0deg, rgba(48,145,181,1) 17%, rgba(72,18,247,1) 74%);
+    width: 605px;
+    height: 771px;
+
+}
+
+.name{
+    text-align: center;
+    position: relative;
+    top: 39px;
+    font-family: 'Rowdies', cursive;
+    font-size: 33px;
+    color:white
+}
+
+.portrait{
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: 73px;
+    left: 107px;
+    transition: 1s;
+}
+
+.portrait:hover{
+    
+    transform: scale(1.2);
+}
+
+.container{
+    position: relative;
+    top: 70px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: right;
+    font-family: 'Red Rose', cursive;
+    color: white;
+    margin-left:25px;
+    margin-bottom: 15px;
+    margin-top:40px;
+    transition: 1s;
+    transform: translateY(10px);
+}
+
+.container:hover{
+    transition: 1s;
+    transform: translateY(-10px);
+}
+
+.title{
+    height: 45px;
+    color: white; 
+    position: relative;
+    left: 141px;
+    top: 15px;
+    font-weight: bolder;
+}
+
+.container--item{
+    margin-top: 10px;
+}
+
+.curriculum{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    background: linear-gradient(0deg, rgba(72,18,247,1) 17%, rgba(48,145,181,1) 74%);
+    
+    align-items: center;
+}
+
+.experience{
+    margin-top: 15px;
+    background:rgba(237,237,247,0.8);
+
+    width: 95%;
+    -webkit-box-shadow: 8px 18px 31px -10px rgba(0,0,0,0.8);
+    -moz-box-shadow: 8px 18px 31px -10px rgba(0,0,0,0.8);
+    box-shadow: 8px 18px 31px -10px rgba(0,0,0,0.8);
+
+display: flex;
+flex-direction: column;
+}
+
+.experience-title{
+    width: 100%;
+    text-align: center;
+    font-family: 'Rowdies', cursive;
+
+}
+
+
+
+.tools{
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+color: black;
+font-family: 'Red Rose', cursive;
+}
+
+.tool--container{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+
+.tool--container h3{
+    margin-bottom:15px;
+    margin-top:5px;
+
+    font-weight: bolder;
+}
+    
+.box{
+    margin-top:25px;
+    margin-bottom:25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    width: 45%;
+    transition: 1s;
+    -webkit-box-shadow: 11px 15px 23px -6px rgba(0,0,0,0.77);
+    -moz-box-shadow: 11px 15px 23px -6px rgba(0,0,0,0.77);
+    box-shadow: 11px 15px 23px -6px rgba(0,0,0,0.77);
+}
+.box:hover{
+    -webkit-box-shadow: 1px 11px 21px -9px rgba(0,0,0,0.77);
+-moz-box-shadow: 1px 11px 21px -9px rgba(0,0,0,0.77);
+box-shadow: 1px 11px 21px -9px rgba(0,0,0,0.77);
+}
+
+
+@media (max-width: 800px){
+
+main{
+    flex-direction: column;
+}
+
+section{
+    width: 100%;
+}
+
+}
